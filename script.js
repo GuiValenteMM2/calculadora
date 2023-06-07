@@ -21,16 +21,16 @@ const divide = function(a, b) {
 const operate = function(firstNumber, operation, secondNumber) {
     let a = firstNumber;
     let b = secondNumber;
-    if (operation == add()) {
+    if (operation == add) {
         return add(a, b);
     } 
-    if (operation == sub()) {
+    if (operation == sub) {
         return sub(a, b);
     }
-    if (operation == multiply()) {
+    if (operation == multiply) {
         return multiply(a, b);
     }
-    if (operation == divide()) {
+    if (operation == divide) {
         return divide(a, b);
     } else {
         return "ERRO, ESCOLHA UMA OPERAÇÃO!";
