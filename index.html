@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer ></script>
 </head>
 
 <body>
     <div id="calculator">
         <div id="topPart">
-            <div id="display"> 120392103
+            <div id="display"> 
             </div>
             <div id="clearButtonDiv">
                 <button class="clearButton">C</button>
@@ -23,37 +23,51 @@
         <div id="generalKeys"> 
             <div id="main">
                 <div class="mainButtons">
-                    <div class="firstLine"><button class="numberButton">7</button></div>
-                    <div class="firstLine"><button class="numberButton">8</button></div>
-                    <div class="firstLine"><button class="numberButton">9</button></div>
+                    <button type="button" 
+                    class="numberButton"  value="7"
+                    onclick="storeValue(this)" >7</button>
+                    <button type="button" class="numberButton" 
+                    onclick="storeValue(this)" value="8" >8</button>
+                    <button type="button" class="numberButton"
+                    onclick="storeValue(this)" value="9" >9</button>
                 </div>
 
                 <div class="mainButtons">
-                    <div class="secondLine"><button class="numberButton">4</button></div>
-                    <div class="secondLine"><button class="numberButton">5</button></div>
-                    <div class="secondLine"><button class="numberButton">6</button></div>
+                    <button type="button" class="numberButton" 
+                    onclick="storeValue(this)" value="4" >4</button>
+                    <button type="button" class="numberButton"
+                    onclick="storeValue(this)" value="5" >5</button>
+                    <button type="button" class="numberButton" 
+                    onclick="storeValue(this)" value="6" >6</button>
                 </div>
 
                 <div class="mainButtons">
-                    <div class="thirdLine"><button class="numberButton">1</button></div>
-                    <div class="thirdLine"><button class="numberButton">2</button></div>
-                    <div class="thirdLine"><button class="numberButton">3</button></div>
+                    <button type="button" class="numberButton"  
+                    onclick="storeValue(this)" value="1" >1</button>
+                    <button type="button" class="numberButton" 
+                    onclick="storeValue(this)" value="2" >2</button>
+                    <button type="button" class="numberButton"
+                    onclick="storeValue(this)" value="3" >3</button>
                 </div>
 
-                <div class="mainChars">
-                    <div class="fourthLine"><button class="numberButton">0</button></div>
-                    <div class="fourthLine"><button class="decimalButton">.</button></div>
-                    <div class="fourthLine"><button class="operateButton">=</button></div>
+                <div class="mainButtons">
+                    <button type="button" class="numberButton"
+                    onclick="storeValue(this)" value="0" >0</button>
+                    <button type="button" class="decimalButton">.</button>
+                    <button type="button" class="operateButton">=</button>
                 </div>
 
             </div>
 
             <div id="operators">
-                <div class="divide"><button class="operatorButton">/</button></div>
-                <div class="multiply"><button class="operatorButton">x</button></div>
-                <div class="sub"><button class="operatorButton">-</button></div>
-                <div class="add"><button class="operatorButton">+</button></div>
-            </div>
+                <button type="button" id="divide" class="operatorButton"
+                onclick="storeValue(this)" value="/">/</button>
+                <button type="button" id="multiply" class="operatorButton" 
+                onclick="storeValue(this)" value="x" >x</button>
+                <button type="button" id="sub" class="operatorButton"
+                onclick="storeValue(this)" value="-">-</button>
+                <button type="button" id="add" class="operatorButton"
+                onclick="storeValue(this)" value="+">+</button>
         </div>
     </div>
 </body>
